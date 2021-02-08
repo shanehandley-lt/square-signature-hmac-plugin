@@ -1,0 +1,10 @@
+{
+  "name": "square-signature-hmac-plugin",
+  "version": "0.0.1",
+  "private": true,
+  "insomnia": {
+    "name": "square-signature-hmac-plugin",
+    "description": "An insomnia plugin to simplify x-square-signature header when testing square webhook endpoints"
+  },
+  "main": "main.js"
+}
