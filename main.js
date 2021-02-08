@@ -28,9 +28,9 @@ module.exports.templateTags = [
 
       const url = await context.util.render(request.url);
       
-      const params = `?${request.parameters.map((param) => {
-        return `${param.name}=${param.value}`
-      })}`
+      const params = request.parameters.length > 0
+        ? `?${request.parameters.map((param) => `${param.name}=${param.value}`).join('&')}`
+        : ''
 
       const body = request.body.text;
 

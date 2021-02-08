@@ -14,6 +14,20 @@ This is not available as a packaged plugin, from insomnia you will need to run:
 
 `git clone git@github.com:shanehandley-lt/square-signature-hmac-plugin.git ~/Library/Application\ Support/Insomnia/plugins/square-signature-hmac-plugin`
 
+Then reload plugins in insomnia via Preferences > Plugins > 'Reload Plugins'
+
+### Usage
+
+Add a `x-square-signature` header to your request and 'sq' and wait for the variable selection popup ([or press ctrl+space](https://support.insomnia.rest/article/40-template-tags))
+
+![Header](header.png)
+
+Double click to variable and edit the Key to match the signature for your webhook.
+
+![UI](ui.png)
+
+The computed signature should be added to the request header value.
+
 ### References
 
 - https://github.com/grunka/insomnia-plugin-request-body-hmac
